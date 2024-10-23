@@ -1,19 +1,67 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --clr_header_main: darkblue;
-  }
-  
-  
-  .header_main {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    background-color: var(--clr_header_main);
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr_header_main: skyblue;
+  --clr_beacon_cutout: wheat;
+}
+
+.header_main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: var(--clr_header_main);
+  /* padding-left: 10px; */
+  /* padding-top: 20px; */
+}
+
+.beacon_logo {
+  width: 55px;
+  height: 70px;
+  display: block;
+  padding-left: 10px;
+  padding-top: 5px;
+  /* background-color: aquamarine; */
+}
+
+.beacon_cutout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr_beacon_cutout);
+  clip-path: polygon(28% 0, 100% 0, 100% 100%, 0% 22%);
+  /* clip-path: polygon(100% 0, 0 20%, 100% 100%);     */
+  /* text-align: right; */
+  position: relative;
+  z-index: 9999;
+  margin-right: -2px;
+  margin-left: -2px;
+}
+
+.beacon {
+  height: 65px;
+  display: block;
+}
+
+.chef {
+  /* width: 80px; */
+
+  height: 70px;
+  display: block;
+}
+
+.chef_logo {
+  height: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  background-color: var(--clr_beacon_cutout);
+  /* margin-left: -20px;} */
+}
