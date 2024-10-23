@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --clr_header_main: darkblue;
+  }
+  
+  
+  .header_main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: var(--clr_header_main);
+  }
+  
