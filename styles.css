@@ -54,7 +54,7 @@
   /* background-color: var(--clr_beacon_cutout); */
   background: radial-gradient(at 0% 22%, cornsilk 0%, wheat 50%, wheat 100%);
   clip-path: polygon(28% 0, 100% 0, 100% 100%, 0% 22%);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); */
   /* clip-path: polygon(100% 0, 0 20%, 100% 100%);     */
   /* text-align: right; */
   /* position: relative; */
