@@ -9,12 +9,26 @@
   --clr_beacon_cutout: wheat;
 }
 
+.roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
 .header_main {
   display: flex;
   align-items: center;
   width: 100%;
   height: 80px;
   background-color: var(--clr_header_main);
+  background: linear-gradient(
+    to right,
+    #6cb4ee 0%,
+    var(--clr_header_main) 50%,
+    var(--clr_header_main) 100%
+  );
   /* padding-left: 10px; */
   /* padding-top: 20px; */
 }
@@ -29,21 +43,39 @@
 }
 
 .beacon_cutout {
+  /* position: absolute; */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
-  background-color: var(--clr_beacon_cutout);
+  /* background-color: var(--clr_beacon_cutout); */
+  background: radial-gradient(at 0% 22%, cornsilk 0%, wheat 50%, wheat 100%);
   clip-path: polygon(28% 0, 100% 0, 100% 100%, 0% 22%);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   /* clip-path: polygon(100% 0, 0 20%, 100% 100%);     */
   /* text-align: right; */
-  position: relative;
-  z-index: 9999;
-  margin-right: -2px;
+  /* position: relative; */
+  /* z-index: 9999; */
+  /* margin-right: -1px; */
   margin-left: -2px;
+  /* z-index: 1; */
+}
+
+.beacon_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.beacon_text {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the text perfectly */
+  z-index: 10000; /* Ensure it appears above everything else */
 }
 
 .beacon {
